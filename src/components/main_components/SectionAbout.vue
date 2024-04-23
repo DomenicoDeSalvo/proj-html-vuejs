@@ -1,5 +1,5 @@
 <template>
-    <section class="text-center my-5">
+    <section class="about text-center d-flex align-items-center">
         <div class="container_65">
             <h1 class="decorated my-3">More about Damon Vaughn</h1>
             <p class="my-3">
@@ -20,6 +20,10 @@
 
 <style lang="scss" scoped>
     @use'../../assets/Style/partials/variables' as*;
+
+    .about{
+        height: 320px;
+    }
     h1{
         color: $brand_yellow;
     }
