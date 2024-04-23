@@ -1,9 +1,10 @@
 <template>
-    <header>
+    <header class="position-absolute top-0 start-0 end-0" >
         <nav class="container_85">
-            <div class="row">
-                <ul class="mt-3 list-unstyled d-flex gap-3 justify-content-end">
-                    <li v-for="(nav, i) in navBar" :key="i">{{ nav.text }}</li>
+            <div class="d-flex m-auto justify-content-between">
+                <img class="mt-2 logo" src="/public/author-logo-round-small.png" alt="">
+                <ul class=" mt-4 list-unstyled d-flex gap-3">
+                    <li v-for="(nav, i) in navBar" :key="i"><span>{{ nav.text }}</span></li>
                 </ul>
             </div>
         </nav>
@@ -54,5 +55,12 @@
 </script>
 
 <style lang="scss" scoped>
+    .logo{
+        max-width: 90px;
+    }
+
+    li span{
+        cursor: pointer;
+    }
 
 </style>
