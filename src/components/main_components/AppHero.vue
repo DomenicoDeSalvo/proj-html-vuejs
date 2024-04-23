@@ -1,10 +1,10 @@
 <template>
-    <div class="hero">
+    <div class="hero mb-5">
         <!-- HERO INTRO AND SLIDER BUTTONS -->
         <section>
             <div class="container_80">
                 <div class="hero__intro mb-4">
-                    <h1>Damon Vaughn</h1>
+                    <h1 class="decorated">Damon Vaughn</h1>
                     <h2 class="subtitle">Best-selling author and the most influential public intellectual in the western world right now.</h2>
                     <h6>- The New York Times</h6>
                 </div>
@@ -50,8 +50,12 @@
                 </div>
             </div>
             <div class="container_80 pb-5">
-                <button class="left">Buy on Amazon</button>
-                <button class="right">Buy on AppStore</button>
+                <button class="left">
+                    <span><font-awesome-icon :icon="['fab', 'amazon']" />  Buy on Amazon</span>
+                </button>
+                <button class="right">
+                    <span><font-awesome-icon :icon="['fab', 'apple']" />  Buy on AppStore</span>
+                </button>
             </div>
         </section>
     </div>
@@ -64,11 +68,11 @@
 </script>
 
 <style lang="scss" scoped>
-@use'../../assets/Style/partials/variables' as*;
+    @use'../../assets/Style/partials/variables' as*;
 
 //HERO LAYOUT
     .hero{
-        background-image: url(/public/author_banner.jpg);
+        background-image: url(/public/hero-07-2x.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -82,7 +86,6 @@
         padding-top: 130px;
         h1{
             color: $brand_yellow;
-            font-family: "Caveat", cursive;
         }
         h6{
             color: $brand_grey;
@@ -147,17 +150,17 @@
             }
 
             p{
-                font-size: 14px;
-                color: $brand_grey;
+                font-size: 12px;
             }
         }  
         button{
+            font-size: 12px;
             width: 50%;
             height: 30px;
             border: 2px solid #C0E1D5;
             background-color: $brand_white;
             &:hover{
-                background-color: #EEF9F6;
+                background-color: #F5FCFA;
             }
         }    
         .left{

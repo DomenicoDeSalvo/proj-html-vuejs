@@ -12,9 +12,12 @@ import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {faBook} from '@fortawesome/free-solid-svg-icons'
+import {faAmazon} from '@fortawesome/free-brands-svg-icons'
+import {faApple} from '@fortawesome/free-brands-svg-icons'
 
 
-library.add(faArrowLeft, faArrowRight, faBook)
+
+library.add(faArrowLeft, faArrowRight, faBook, faAmazon, faApple)
 
 const app = createApp(App)
 
