@@ -1,5 +1,5 @@
 <template>
-    <header class="position-absolute top-0 start-0 end-0 text-light" >
+    <header class="position-absolute top-0 start-0 end-0 text-light z-2" >
         <nav class="container_85">
             <div class="d-flex m-auto justify-content-between">
                 <img class="mt-2 logo" src="/public/author-logo-round-small.png" alt="">
@@ -56,7 +56,7 @@
 
 <style lang="scss" scoped>
     .logo{
-        max-width: 90px;
+        max-width: 150px;
     }
 
     li span{

@@ -5,7 +5,7 @@
             <div class="container_80">
                 <div class="hero__intro mb-4">
                     <h1>Damon Vaughn</h1>
-                    <h2>Best-selling author and the most influential public intellectual in the western world right now.</h2>
+                    <h2 class="subtitle">Best-selling author and the most influential public intellectual in the western world right now.</h2>
                     <h6>- The New York Times</h6>
                 </div>
                 <div class="slider d-flex gap-1">
@@ -19,7 +19,7 @@
             </div>
         </section>
         <!-- ICONS -->
-        <section class="icons">
+        <section class="icons z-3">
             <div class="d-flex flex-column m-3 gap-1">
                 <button class="btn">
                     <!-- NOTA: Non riesco a capire cosa sia questa icona, ne metto una caso per il momento. -->
@@ -35,6 +35,25 @@
                 </button>
             </div>
         </section>
+        <!-- LATEST RELEASE -->
+        <section class="latest position-absolute bottom-0 end-0 py-4">
+            <div class="container_80">
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <img class="" src="/public/book-widget.png" alt="">
+                    </div>
+                    <div class="description col text-center">
+                        <h2 class="subtitle">Latest Book Release</h2>
+                        <h5>D.VAUGHN AUTOBIOGRAPHY</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure saepe ut asperiores aliquam possimus similique!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container_80 pb-5">
+                <button class="left">Buy on Amazon</button>
+                <button class="right">Buy on AppStore</button>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -46,17 +65,29 @@
 
 <style lang="scss" scoped>
 @use'../../assets/Style/partials/variables' as*;
+
+//HERO LAYOUT
     .hero{
         background-image: url(/public/author_banner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         color: $brand_white;
+        position: relative;
+        padding: 60px 0;
     }
 
     .hero__intro{
         max-width: 420px;
         padding-top: 130px;
+        h1{
+            color: $brand_yellow;
+            font-family: "Caveat", cursive;
+        }
+        h6{
+            color: $brand_grey;
+            font-style: italic;
+        }
     }
 
     .slider button{
@@ -64,9 +95,10 @@
         color: $brand_white;
     }
 
+    //ICONS
     .icons{
         position: absolute;
-        top: 10%;
+        top: 20%;
         right: 0;
         cursor: pointer;
         button{
@@ -89,6 +121,52 @@
                 }
             }
 
+        }
+    }
+
+    //LATEST RELEASE
+    .latest{
+        background-color: $brand_white;
+        width: calc(100% / 3);
+        max-height: 50%;
+        color: black;  
+        .description{
+
+            *{
+                text-align: left;
+                
+            }
+            h2{
+                font-size: 24px;
+            }
+
+            h5{
+                font-size: 12px;
+                font-weight: 700;
+                color: $brand_yellow;
+            }
+
+            p{
+                font-size: 14px;
+                color: $brand_grey;
+            }
+        }  
+        button{
+            width: 50%;
+            height: 30px;
+            border: 2px solid #C0E1D5;
+            background-color: $brand_white;
+            &:hover{
+                background-color: #EEF9F6;
+            }
+        }    
+        .left{
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+        }
+        .right{
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
         }
     }
 
