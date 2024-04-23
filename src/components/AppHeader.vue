@@ -1,5 +1,5 @@
 <template>
-    <header class="position-absolute top-0 start-0 end-0" >
+    <header class="position-absolute top-0 start-0 end-0 text-light" >
         <nav class="container_85">
             <div class="d-flex m-auto justify-content-between">
                 <img class="mt-2 logo" src="/public/author-logo-round-small.png" alt="">

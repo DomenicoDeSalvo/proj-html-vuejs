@@ -8,9 +8,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import {faCartShopping as cart} from '@fortawesome/free-solid-svg-icons'
+import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 
-library.add(cart)
+library.add(faArrowLeft, faArrowRight)
 
 const app = createApp(App)
 
