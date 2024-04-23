@@ -50,10 +50,10 @@
                 </div>
             </div>
             <div class="container_80 pb-5">
-                <button class="left">
+                <button class="rounded-start">
                     <span><font-awesome-icon :icon="['fab', 'amazon']" />  Buy on Amazon</span>
                 </button>
-                <button class="right">
+                <button class="rounded-end">
                     <span><font-awesome-icon :icon="['fab', 'apple']" />  Buy on AppStore</span>
                 </button>
             </div>
@@ -161,16 +161,9 @@
             background-color: $brand_white;
             &:hover{
                 background-color: #F5FCFA;
+                border-color: #A4D2C2;
             }
         }    
-        .left{
-                border-top-left-radius: 4px;
-                border-bottom-left-radius: 4px;
-        }
-        .right{
-                border-top-right-radius: 4px;
-                border-bottom-right-radius: 4px;
-        }
     }
 
 </style>
