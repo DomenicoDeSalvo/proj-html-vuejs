@@ -3,6 +3,7 @@
     <SectionAbout/>
     <SectionWhereFind/>
     <SectionAudiobook/>
+    <SectionCritics/>
 </template>
 
 <script>
@@ -10,14 +11,15 @@
     import SectionAbout from './main_components/SectionAbout.vue';
     import SectionWhereFind from './main_components/SectionWhereFind.vue';
     import SectionAudiobook from './main_components/SectionAudiobook.vue';
-
-
+    import SectionCritics from './main_components/SectionCritics.vue';
+    
     export default {
         components:{
             AppHero,
             SectionAbout,
             SectionWhereFind,
-            SectionAudiobook
+            SectionAudiobook,
+            SectionCritics
         }
         
     }

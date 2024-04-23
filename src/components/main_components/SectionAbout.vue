@@ -1,3 +1,4 @@
+<!-- LITTLE INFOS ABOUT THE AUTHOR -->
 <template>
     <section class="about text-center d-flex align-items-center">
         <div class="container_65">
@@ -33,7 +34,7 @@
         color: $brand_white;
         font-size: 12px;
         &:hover{
-            background-color: #357F60;
+            background-color: $brand_green_hover;
         }
     }
 

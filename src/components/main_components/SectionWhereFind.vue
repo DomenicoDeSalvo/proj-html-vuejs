@@ -1,3 +1,4 @@
+<!-- ALL PLACES WHERE IT IS POSSIBLE TO FIND THE BOOK -->
 <template>
     <section class="where_find d-flex align-items-center">
         <div class="container_55">
