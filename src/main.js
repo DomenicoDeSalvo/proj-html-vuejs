@@ -11,8 +11,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import {faBook} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faArrowLeft, faArrowRight)
+
+library.add(faArrowLeft, faArrowRight, faBook)
 
 const app = createApp(App)
 

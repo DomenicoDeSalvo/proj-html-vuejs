@@ -19,4 +19,6 @@
 
 <style lang="scss">
   @use './assets/style/general';
+
+  
 </style>
