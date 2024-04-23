@@ -1,20 +1,20 @@
 <template>
     <section class="where_find d-flex align-items-center">
         <div class="container_55">
-            <div class="row row-columns-4 align-items-center">
-                <div class="col">
-                    <img src="/public/ebay-logo.png" alt="">
-                </div>
-                <div class="col">
-                    <img src="/public/audible-logo.png" alt="">
-                </div>
-                <div class="col">
-                    <img src="/public/bb-logo.png" alt="">
-                </div>
-                <div class="col">
-                    <img src="/public/kindlefire-logo.png" alt="">
-                </div>
-            </div>
+            <ul class="d-flex gap-3 list-unstyled">
+                <li>
+                    <img src="/public/ebay-logotan.png" alt="">
+                </li>
+                <li>
+                    <img src="/public/audible-logotan.png" alt="">
+                </li>
+                <li>
+                    <img src="/public/bn-logotan.png" alt="">
+                </li>
+                <li>
+                    <img src="/public/kindlefire-logotan.png" alt="">
+                </li>
+            </ul>
         </div>
     </section>
 </template>

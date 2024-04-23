@@ -6,7 +6,7 @@
                 <div class="hero__intro mb-4">
                     <h1 class="decorated">Damon Vaughn</h1>
                     <h2 class="subtitle">Best-selling author and the most influential public intellectual in the western world right now.</h2>
-                    <h6>- The New York Times</h6>
+                    <div>- The New York Times</div>
                 </div>
                 <div class="slider d-flex gap-1">
                     <button class="btn">
@@ -87,7 +87,7 @@
         h1{
             color: $brand_yellow;
         }
-        h6{
+        div{
             color: $brand_grey;
             font-style: italic;
         }
