@@ -17,7 +17,7 @@
         <!-- ARTICLES -->
         <!-- MAIN ARTICLE -->
         <div class="container_65">
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="main_article col-7">
                     <div class="container_75 py-5 d-flex flex-column gap-3">
                         <h2 class="subtitle">Best Author Of His Generation</h2>
@@ -35,7 +35,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5"></div>
+                <!-- SECONDARY ARTICLES -->
+                <div class="col-4">
+                    <div class="secondary_article mb-4">
+                        <div class="box">
+                            <div class="container_75 py-4 text-center">
+                                <h2 class="subtitle mb-2">A True Masterpiece, Bravo!</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae unde mollitia et fugit aliquid ab quidem, nulla itaque, commodi repellat quos fuga at sed cum, accusamus quisquam.
+                                </p>
+                            </div>                 
+                        </div>
+                        <div class="article__author mt-2">
+                            <img class="me-2 nytimes" src="/public/theguardian-logo.png" alt="">
+                            <span class="name">Gerald Hendley,</span>
+                            <span> The Guardian</span>
+                        </div>
+                    </div>
+                    <div class="secondary_article mb-4">
+                        <div class="box">
+                            <div class="container_75 py-4 text-center">
+                                <h2 class="subtitle mb-2">A Unique View On The World</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repudiandae unde mollitia et fugit aliquid ab quidem, nulla itaque, commodi repellat quos fuga at sed cum, accusamus quisquam.
+                                </p>
+                            </div>                 
+                        </div>
+                        <div class="article__author mt-2">
+                            <img class="me-2 nytimes" src="/public/globe-logo.png" alt="">
+                            <span class="name">Mary Maxey,</span>
+                            <span> The Globe And Mail</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -76,15 +108,15 @@
         *{
             color: $brand_white;
         }
+        .subtitle::after{
+            content: '';
+            display: block;
+            border: 1px solid $brand_grey;
+            width: 100%;
+            margin-top: 20px;
+        }
     }
 
-    .subtitle::after{
-        content: '';
-        display: block;
-        border: 1px solid $brand_grey;
-        width: 100%;
-        margin-top: 20px;
-    }
 
     .newspaper{
         color: $brand_green;
@@ -94,4 +126,24 @@
         max-width: 15px;
     }
 
+    //SECONDARY ARTICLES
+
+    .box{
+        background-color: $brand_beige;
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            color: $brand_grey;
+        }
+    }
+
+    .article__author{
+        font-size: 12px;
+    }
+
+    .name{
+        color: $brand_grey;
+    }
 </style>
