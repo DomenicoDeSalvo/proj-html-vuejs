@@ -1,5 +1,5 @@
 <template>
-    <header class="position-absolute top-0 start-0 end-0 text-light z-2" >
+    <header class="position-absolute top-0 start-0 end-0 z-2" >
         <nav class="container_85">
             <div class="d-flex m-auto justify-content-between">
                 <img class="mt-2 logo" src="/public/author-logo-round-small.png" alt="">
@@ -51,7 +51,7 @@
                         href:'#'
                     },
                     {
-                        text: library.faApple,
+                        text: 'Chart',
                         href:'#'
                     },
                 ]
@@ -61,6 +61,12 @@
 </script>
 
 <style lang="scss" scoped>
+    @use'../assets/Style/partials/variables' as*;
+
+    li{
+        color: white;
+    }
+    
     .logo{
         max-width: 150px;
     }

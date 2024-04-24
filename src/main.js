@@ -14,10 +14,12 @@ import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
 import {faBook} from '@fortawesome/free-solid-svg-icons'
 import {faAmazon} from '@fortawesome/free-brands-svg-icons'
 import {faApple} from '@fortawesome/free-brands-svg-icons'
+import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 
 
 
-library.add(faArrowLeft, faArrowRight, faBook, faAmazon, faApple)
+
+library.add(faArrowLeft, faArrowRight, faBook, faAmazon, faApple, faChevronRight)
 
 const app = createApp(App)
 
