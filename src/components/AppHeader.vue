@@ -73,6 +73,9 @@
 
     li span{
         cursor: pointer;
+        &:hover{
+            color: $brand_yellow;
+        }
     }
 
 </style>
