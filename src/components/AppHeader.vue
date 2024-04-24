@@ -4,7 +4,9 @@
             <div class="d-flex m-auto justify-content-between">
                 <img class="mt-2 logo" src="/public/author-logo-round-small.png" alt="">
                 <ul class=" mt-4 list-unstyled d-flex gap-3">
-                    <li v-for="(nav, i) in navBar" :key="i"><span>{{ nav.text }}</span></li>
+                    <li v-for="(nav, i) in navBar" :key="i">
+                        <item :item="nav"/>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -12,7 +14,11 @@
 </template>
 
 <script>
+    import item from './ListItems.vue';
     export default {
+        components:{
+            item
+        },
         data(){
             return{
                 navBar:[
@@ -45,7 +51,7 @@
                         href:'#'
                     },
                     {
-                        text:'C',
+                        text: library.faApple,
                         href:'#'
                     },
                 ]
