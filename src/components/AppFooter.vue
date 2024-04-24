@@ -1,8 +1,10 @@
 <template>
+    <!-- LOGO -->
     <section class="footer py-5">
         <div class="container_85">
             <img class="logo" src="/public/author-logo-round-small.png" alt="">
         </div>
+        <!-- INFO -->
         <div class="container_55">
             <div class="row row-cols-3">
                 <div class="col px-5">
@@ -16,9 +18,9 @@
                 <div class="col px-5">
                     <h2 class="subtitle mb-3">USEFULL LINKS</h2>
                     <ul class="list-unstyled">
-                        <li class="mb-3" v-for="(link, i) in links" :key="i">
+                        <li class="mb-3 link" v-for="(link, i) in links" :key="i">
                             <font-awesome-icon class="me-3" :icon="['fas', 'chevron-right']" />
-                            <item class="link" :item="link"/>
+                            <item :item="link"/>
                         </li>
                     </ul>
                 </div>
@@ -28,6 +30,12 @@
                         <info :item="data"/>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- COPYRIGHT -->
+        <div class="container_55 text-center">
+            <div class="my-5">
+                Lorem ipsum dolor sit, amet consectetur <span class="link">adipisicing elit</span>. Impedit sapiente natus quo ipsam aspernatur <span class="link">est</span>.
             </div>
         </div>
 
@@ -130,6 +138,7 @@
 
     .link{
         cursor: pointer;
+        color: $brand_white;
     }
 
 </style>

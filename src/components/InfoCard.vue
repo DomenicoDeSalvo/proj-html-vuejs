@@ -1,13 +1,15 @@
 <template>
     <div> 
         <ul class="list-unstyled">
-            <li>{{ item.address }}</li>
-            <li>Phone:{{ item.phone }}</li>
-            <li>Mobile:{{ item.mobile }}</li>
-            <li>Email{{ item.mail }}</li>
+            <li class="mb-3">{{ item.address }}</li>
+            <li class="mb-3">Phone:{{ item.phone }}</li>
+            <li class="mb-3">Mobile:{{ item.mobile }}</li>
+            <li class="mb-3">Email{{ item.mail }}</li>
             <li>
-                <ul class="list-unstyled d-flex" v-for="(social, i) in item.socials" :key="i">
-                    <li>{{ social.name }}</li>
+                <ul class="list-unstyled d-flex gap-3">
+                    <li class="link" v-for="(social, i) in item.socials" :key="i">
+                        {{ social.name }}
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -26,8 +28,7 @@
 </script>
 
 <style lang="scss" scoped>
-    li{
-        margin-bottom: 10px;
+    .link{
+        cursor: pointer;
     }
-
 </style>
