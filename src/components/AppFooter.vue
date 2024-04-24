@@ -18,17 +18,15 @@
                     <ul class="list-unstyled">
                         <li class="mb-3" v-for="(link, i) in links" :key="i">
                             <font-awesome-icon class="me-3" :icon="['fas', 'chevron-right']" />
-                            <item :item="link"/>
+                            <item class="link" :item="link"/>
                         </li>
                     </ul>
                 </div>
                 <div class="col px-5">
                     <h2 class="subtitle mb-3">CONTACT INFO</h2>
-                    <ul class="list-unstyled">
-                        <li class="mb-3" v-for="(data, i) in info" :key="i">
-                            <item :item="data"/>
-                        </li>
-                    </ul>
+                    <div v-for="(data, i) in info" :key="i">
+                        <info :item="data"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,9 +36,11 @@
 
 <script>
     import item from './ListItems.vue';
+    import info from './InfoCard.vue';
     export default {
         components:{
-            item
+            item,
+            info
         },
         data(){
             return{
@@ -68,20 +68,33 @@
                 ],
                 info:[
                     {
-                        text:'Latest Books',
-                    },
-                    {
-                        text:'Upcoming Events',
-                    },
-                    {
-                        text:'Recent Articles',
-                    },
-                    {
-                        text:'Business Enquiries',
-                    },
-                    {
-                        text:'Visit My foundation',
-                    },
+                        address:'Via Pinco Pallo, 17. Catanzaro (CZ)',
+                        phone: 123456789,
+                        mobile: 987654321,
+                        mail:'info@you.com',
+                        socials: [
+                            {
+                                name:'Facebook',
+                                href:'#'
+                            },
+                            {
+                                name:'Twitter',
+                                href:'#'
+                            },
+                            {
+                                name:'Instagram',
+                                href:'#'
+                            },
+                            {
+                                name:'Linkedin',
+                                href:'#'
+                            },
+                            {
+                                name:'Youtube',
+                                href:'#'
+                            },
+                        ]
+                    }
                 ]
             }
         }
@@ -97,10 +110,11 @@
         background-image: url(/public/footer-3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
         color: $brand_grey;
         position: relative;
         font-size: 10px;
+        height: 350px;
     }
 
     .subtitle{
@@ -112,6 +126,10 @@
         max-width: 60px;
         position: absolute;
         top: 30%;
+    }
+
+    .link{
+        cursor: pointer;
     }
 
 </style>
