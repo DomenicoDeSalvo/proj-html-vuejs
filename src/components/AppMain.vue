@@ -5,6 +5,7 @@
     <SectionAudiobook/>
     <SectionCritics/>
     <SectionEvents/>
+    <SectionNewsletter/>
 </template>
 
 <script>
@@ -14,7 +15,7 @@
     import SectionAudiobook from './main_components/SectionAudiobook.vue';
     import SectionCritics from './main_components/SectionCritics.vue';
     import SectionEvents from './main_components/SectionEvents.vue';
-
+    import SectionNewsletter from './main_components/SectionNewsletter.vue';
     
     export default {
         components:{
@@ -23,7 +24,8 @@
             SectionWhereFind,
             SectionAudiobook,
             SectionCritics,
-            SectionEvents
+            SectionEvents,
+            SectionNewsletter
         }
         
     }

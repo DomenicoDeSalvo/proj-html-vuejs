@@ -35,6 +35,7 @@
         font-size: 12px;
         &:hover{
             background-color: $brand_green_hover;
+            color: $brand_white;
         }
     }
 

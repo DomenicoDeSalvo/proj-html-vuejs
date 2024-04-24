@@ -95,6 +95,7 @@
         font-size: 12px;
         &:hover{
             background-color: $brand_yellow_hover;
+            color: $brand_white;
         }
     }
 
