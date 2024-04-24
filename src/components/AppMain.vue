@@ -6,6 +6,7 @@
     <SectionCritics/>
     <SectionEvents/>
     <SectionNewsletter/>
+    <SectionMoreInfo/>
 </template>
 
 <script>
@@ -16,6 +17,8 @@
     import SectionCritics from './main_components/SectionCritics.vue';
     import SectionEvents from './main_components/SectionEvents.vue';
     import SectionNewsletter from './main_components/SectionNewsletter.vue';
+    import SectionMoreInfo from './main_components/SectionMoreInfo.vue';
+
     
     export default {
         components:{
@@ -25,7 +28,8 @@
             SectionAudiobook,
             SectionCritics,
             SectionEvents,
-            SectionNewsletter
+            SectionNewsletter,
+            SectionMoreInfo,
         }
         
     }

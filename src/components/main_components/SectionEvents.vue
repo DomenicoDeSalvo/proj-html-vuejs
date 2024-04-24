@@ -2,7 +2,7 @@
 
 <template>
     <section class="events text-center py-4">
-        <div class="container mb-3">
+        <div class="container_75 mb-3">
             <h2 class="subtitle">Upcoming Events</h2>
             <div class="invitation">MEET THE AUTHOR IN PERSON</div>
         </div>
@@ -67,6 +67,10 @@
     .custom{
         border: none;
         border-radius: 0;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
     }
 
     .event_name::after{
