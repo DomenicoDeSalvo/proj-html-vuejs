@@ -4,6 +4,7 @@
     <SectionWhereFind/>
     <SectionAudiobook/>
     <SectionCritics/>
+    <SectionEvents/>
 </template>
 
 <script>
@@ -12,6 +13,8 @@
     import SectionWhereFind from './main_components/SectionWhereFind.vue';
     import SectionAudiobook from './main_components/SectionAudiobook.vue';
     import SectionCritics from './main_components/SectionCritics.vue';
+    import SectionEvents from './main_components/SectionEvents.vue';
+
     
     export default {
         components:{
@@ -19,7 +22,8 @@
             SectionAbout,
             SectionWhereFind,
             SectionAudiobook,
-            SectionCritics
+            SectionCritics,
+            SectionEvents
         }
         
     }

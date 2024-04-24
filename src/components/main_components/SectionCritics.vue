@@ -1,3 +1,4 @@
+<!-- ARTICLES ABOUT THE AUTHOR AND HIS BOOK -->
 <template>
     <section class="my-5">
         <!-- TITLE -->
