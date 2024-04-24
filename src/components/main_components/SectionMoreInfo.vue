@@ -55,8 +55,13 @@
 
     .custom{
         border: none;
+        cursor: pointer;
         img{
             border-bottom-right-radius: 50px;
+            filter: brightness(0.5);
+        }
+        &:hover{
+            opacity: 0.8;
         }
         h5{
             color: $brand_white;

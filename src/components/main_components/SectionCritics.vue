@@ -10,7 +10,7 @@
                 </div>
                 <div>
                     <button class="yellow btn">
-                        Read all Testimonials
+                        Read All Testimonials
                     </button>
                 </div>
             </div>

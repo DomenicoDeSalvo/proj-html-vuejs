@@ -7,6 +7,7 @@
     <SectionEvents/>
     <SectionNewsletter/>
     <SectionMoreInfo/>
+    <SectionArticles/>
 </template>
 
 <script>
@@ -18,7 +19,7 @@
     import SectionEvents from './main_components/SectionEvents.vue';
     import SectionNewsletter from './main_components/SectionNewsletter.vue';
     import SectionMoreInfo from './main_components/SectionMoreInfo.vue';
-
+    import SectionArticles from './main_components/SectionArticles.vue';
     
     export default {
         components:{
@@ -30,6 +31,7 @@
             SectionEvents,
             SectionNewsletter,
             SectionMoreInfo,
+            SectionArticles
         }
         
     }
